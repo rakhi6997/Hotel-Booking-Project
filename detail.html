@@ -1,9 +1,9 @@
 <html>
     <head><title>Details</title></head>
     <div>
-        <div><header><img  width="150" height="200" alt="logo" src="assests/images/logo.png"/>
+        <div><header><a href="index.html"><img  width="150" height="200" alt="logo" src="assests/images/logo.png"/></a>
         
-            <a href="login.html" target="_blank">Login</a>
+            <a href="login.html" target="_self">Login</a>
             </header>
             </div> 
         
@@ -12,7 +12,25 @@
             <div>
                 <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg"/>
             </div>
-            <a href="payment.html">Book Now</a>
+            <form action="payment.html" method="GET" target="_self">
+                <label>Adults:</label>
+                <input type="number" min="1" required><br>
+                <label>Name:</label>
+                <input type="text"required ><br>
+                <label>From Date:</label>
+                <input type="date"required><br>
+                <label>To Date:</label>
+                <input type="date" required><br>
+                <label>Total:</label>
+                <input type="text" readonly="readonly"><br>
+                <a href="payment.html"><input type="submit" value="Book Now">
+                </a>
+                
+            </form>
+            
+                
+            
+            
             <h2>Raddison Blu Hotel</h2>
             <div>RATING<br><br> 5 Star</div>
             <p>Anemeties</p>
@@ -25,15 +43,16 @@
             </ul>
             <h5>DESCRIPTION</h5>
             <p>Descripition of Raddison Blue Hotel is supposed to be mentioned here</p>
-           <div><a href="contact.html">Contact Us</a></div>
+           
+            
+        </body>
+        <div><a href="contact.html">Contact Us</a></div>   
            <div>
             <a href="https://www.facebook.com" target="_blank"> <img height="20" width="22" src="assests\images\facebook.png"/></a>
             <a href="https://www.instagram.com" target="_blank"><img height="20" width="22" src="assests\images\instagram.png"/></a>
             <a href="https://www.twitter.com" target="_blank"><img height="20" width="22" src="assests\images\twitter.png"/></a>
 
-         </div>
-            
-        </body>
+            </div>
         <div>&#169 2020 ROOM SEARCH PVT.LTD
             
         </div>    
