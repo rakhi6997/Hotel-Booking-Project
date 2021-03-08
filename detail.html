@@ -1,16 +1,75 @@
-<html>
-    <head><title>Index </title></head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Details</title>
+    <link rel="stylesheet" href="styles/common.css">
+    <link rel="stylesheet" href="styles/detail.css"> 
+</head>
+<body>
     <div>
-        <div><img  width="150" height="200" alt="logo" src="assests/images/logo.png"/>
-        <div>Header Div</div>
+        <div class="header">
+            <header>
+                <a href="index.html"><img class="logo" alt="logo" src="assests/images/logo.png"/></a>
+                <a href="login.html" target="_self">Login</a>
+            </header>
+        </div> 
+        
            
-        <body>
-           <div>
-               Contact Div
+        <div class="content">
+            <div >
+                <img class="image" src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" />
             </div>
-        </body>
-        <div>
-            Footer Div
-        </div>    
-    </div>    
+            <form action="payment.html" method="GET" target="_self" class="form">
+                <label>Adults:</label>
+                <input type="number" min="1" required><br>
+                <label>Name:</label>
+                <input type="text"required ><br>
+                <label>From Date:</label>
+                <input type="date"required><br>
+                <label>To Date:</label>
+                <input type="date" required><br>
+                <label>Total:</label>
+                <input type="text" readonly="readonly"><br>
+                <a href="payment.html"><input type="submit" value="Book Now">
+                </a>
+                
+            </form>
+            
+                
+            
+            <div class="description">
+            <h2>Raddison Blu Hotel</h2>
+            <div>RATING<br><br> 5 Star</div>
+            <p>Anemeties</p>
+            <ul>
+                <li>Room Service</li>
+                <li>Restaurant</li>
+                <li>Business Center</li>
+                <li>Fitness Center</li>
+                <li>Pool</li>
+            </ul>
+            <h5>DESCRIPTION</h5>
+            <p>Descripition of Raddison Blue Hotel is supposed to be mentioned here</p>
+            </div>
+           
+            
+        </div>
+        <div class="footer">
+            <footer>
+                <div><a href="contact.html">Contact Us</a></div>   
+                <div>
+                    <a href="https://www.facebook.com" target="_blank"> <img class="social" src="assests\images\facebook.png"/></a>
+                    <a href="https://www.instagram.com" target="_blank"><img  class="social" src="assests\images\instagram.png"/></a>
+                    <a href="https://www.twitter.com" target="_blank"><img  class="social" src="assests\images\twitter.png"/></a>
+
+                </div>
+                <div>&#169 2020 ROOM SEARCH PVT.LTD
+            
+                </div>    
+        </div>  
+    </div>
+</body>          
 </html>

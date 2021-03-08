@@ -1,0 +1,25 @@
+.image{
+    height: 500px;
+    width: 500px;
+
+}
+.payment{
+    background-color: rgb(132,136,139);
+    width: 50% ;
+    height: 20%;
+    margin: auto;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+.info{
+    margin:2%;
+}
+.price{
+    margin: 2%;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 2%;
+    padding-right: 2%;
+}
