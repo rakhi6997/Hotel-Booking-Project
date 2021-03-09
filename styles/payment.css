@@ -1,6 +1,7 @@
 .image{
     height: 500px;
     width: 500px;
+   
 
 }
 .payment{
@@ -22,4 +23,12 @@
     padding-bottom: 1%;
     padding-left: 2%;
     padding-right: 2%;
+}
+.content{
+    padding-top:4em;
+    padding-bottom: 4em;
+}
+.pay{
+    padding-bottom: 2em;
+    padding-left: 2em;
 }

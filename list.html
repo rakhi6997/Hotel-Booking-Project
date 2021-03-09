@@ -7,22 +7,23 @@
     <title>List</title>
     <link rel="stylesheet" href="styles/common.css">
     <link rel="stylesheet" href="styles/list.css">    
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div>
+   
         <div class="header">
             <header>
                 <a href="index.html"><img   alt="logo" src="assests/images/logo.png" class="logo"/></a>
-                <a href="login.html" target="_self">Login</a>
+                <a href="login.html" target="_self" id="login">Login</a>
             </header>
         </div>
         <div class="content">     
         
-           <div>
-               <ul>
-                   <li><a href="#list-view">List View</a></li>
-                   <li><a href="#map-view">Map View</a></li>
-               </ul>
+           <div id="list">
+               
+                   <a href="#list-view">List View</a>
+                   <a href="#map-view">Map View</a>
+               
             </div>
             <div id="list-view">
                 <div class="hotels">
@@ -49,18 +50,19 @@
 
        <div class="footer">
            <footer>
-                <div><a href="contact.html">Contact Us</a></div>   
+                <div class="contact"><a href="contact.html">Contact Us</a></div>   
+                <div class="copyright" id="foot">
+                    &#169 2020 ROOM SEARCH PVT.LTD
+                </div> 
                <div>
                     <a href="https://www.facebook.com" target="_blank"> <img  src="assests\images\facebook.png" class="social"/></a>
                     <a href="https://www.instagram.com" target="_blank"><img  src="assests\images\instagram.png" class="social"/></a>
                     <a href="https://www.twitter.com" target="_blank"><img  src="assests\images\twitter.png" class="social"/></a>
 
                 </div>
-                <div>
-                    &#169 2020 ROOM SEARCH PVT.LTD
-                </div>  
+                
             </footer>      
         </div>
-    </div>
+    
 </body>    
 </html>
