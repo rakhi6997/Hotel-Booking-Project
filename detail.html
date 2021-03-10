@@ -1,77 +1,77 @@
+
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Details</title>
-    <link rel="stylesheet" href="styles/common.css">
-    <link rel="stylesheet" href="styles/detail.css"> 
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
-</head>
-<body>
-    <div>
-        <div class="header">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">        
+        <title>Detail</title>
+        <link rel="stylesheet" href="styles/common.css">
+        <link rel="stylesheet" href="styles/detail.css">
+    </head>
+    <body>
+        <div id="mainContainer">
             <header>
-                <a href="index.html"><img class="logo" alt="logo" src="assests/images/logo.png"/></a>
-                <a href="login.html" target="_self" id="login">Login</a>
+                <a href="index.html"><img src="assests\images\logo.png" alt="logo" class="logo" ></a>
+                <a href="login.html" target="_self" class="login">Login</a>
             </header>
-        </div> 
-        
-           
-        <div class="content">
-            <div >
-                <img class="image" src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" />
+            <div>
+                <div id="detailscontainer">
+                    <div id="div1">
+                    <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" style="height: 350px; width: 500px;"><br>
+                    </div>
+                    <form action="payment.html" method="get" target="_self" id="div2">
+                        <div class="innercontainer">
+                            <label for="adult" >Adults:</label>
+                            <input type="number"  id="adult" name="adult" min="1" required>
+                        </div>
+                        <div class="innercontainer">
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="innercontainer">
+                            <label for="fromDate">From Date:</label>
+                            <input type="date" id="fromDate" name="fromDate" required>
+                        </div>
+                        <div class="innercontainer">
+                            <label for="toDate">To Date:</label>
+                            <input type="date" id="toDate" name="toDate" required>
+                        </div>
+                        <div class="innercontainer">
+                            <label for="price">Total:</label>
+                            <input type="number" id="price" name="price" readonly>
+                        </div>
+                        <div class="innercontainer">
+                            <input type="submit" value="Book Now" class="bookNow">
+                        </div>
+                    </form>
+                </div>
+                <div id="div3">
+                <h2>Radisson Blu Hotel</h2>
+                <span class="text">RATING</span><br>
+                <br>
+                5 Star<br>
+                <br>
+                <span class="text">FACILITIES</span>
+                <ul>
+                    <li>Room service</li>
+                    <li>Restaurant</li>
+                    <li>Business center</li>
+                    <li>Fitness center</li>
+                    <li>Pool</li>
+                </ul>
+                <span class="text"><h5>DESCRIPTION</h5></span>
+                Near Indira Gandhi International Airport and 1.7 KM far bus station,New Delhi,110077.
+                </div>
             </div>
-            <form action="payment.html" method="GET" target="_self" class="form">
-                <label>Adults:</label>
-                <input type="number" min="1" required><br>
-                <label>Name:</label>
-                <input type="text"required ><br>
-                <label>From Date:</label>
-                <input type="date"required><br>
-                <label>To Date:</label>
-                <input type="date" required><br>
-                <label>Total:</label>
-                <input type="text" readonly="readonly"><br>
-                <a href="payment.html"><input type="submit" value="Book Now">
-                </a>
-                
-            </form>
-            
-                
-            
-            <div class="description">
-            <h2>Raddison Blu Hotel</h2>
-            <div>RATING<br><br> 5 Star</div>
-            <p>Anemeties</p>
-            <ul>
-                <li>Room Service</li>
-                <li>Restaurant</li>
-                <li>Business Center</li>
-                <li>Fitness Center</li>
-                <li>Pool</li>
-            </ul>
-            <h5>DESCRIPTION</h5>
-            <p>Descripition of Raddison Blue Hotel is supposed to be mentioned here</p>
-            </div>
-           
-            
-        </div>
-        <div class="footer">
             <footer>
-                <div class="contact"><a href="contact.html">Contact Us</a></div>   
-                <div class="copyright" id="foot">&#169 2020 ROOM SEARCH PVT.LTD
-            
+                <a href="contact.html" target="_self" class="contact">Contact Us</a>
+                <div class="socialmedia">
+                <a href="https://www.facebook.com" target="_blank"><img src="assests/images/facebook.png" style="height: 20px; width: 22px;"></a>
+                <a href="https://www.instagram.com" target="_blank"><img src="assests/images/instagram.png" style="height: 20px; width: 22px;"></a>
+                <a href="https://twitter.com" target="_blank"><img src="assests/images/twitter.png" style="height: 20px; width: 22px;"></a>
                 </div>
-                <div>
-                    <a href="https://www.facebook.com" target="_blank"> <img class="social" src="assests\images\facebook.png"/></a>
-                    <a href="https://www.instagram.com" target="_blank"><img  class="social" src="assests\images\instagram.png"/></a>
-                    <a href="https://www.twitter.com" target="_blank"><img  class="social" src="assests\images\twitter.png"/></a>
-
-                </div>
-                    
-        </div>  
-    </div>
-</body>          
+                <p class="copyright">&copy; 2020 ROOM SEARCH PVT LTD.</p>
+            </footer>
+        </div>
+    </body>
 </html>

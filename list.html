@@ -1,68 +1,85 @@
 <!DOCTYPE html>
+
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>List</title>
-    <link rel="stylesheet" href="styles/common.css">
-    <link rel="stylesheet" href="styles/list.css">    
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
-</head>
-<body>
-   
-        <div class="header">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">        
+        <title>List</title>
+        <link rel="stylesheet" href="styles/common.css">
+        <link rel="stylesheet" href="styles/list.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap">
+    </head>
+    <body>
+        <div id="mainContainer">
             <header>
-                <a href="index.html"><img   alt="logo" src="assests/images/logo.png" class="logo"/></a>
-                <a href="login.html" target="_self" id="login">Login</a>
+                <a href="index.html"><img src="assests\images\logo.png" alt="logo" class="logo" ></a>
+                <a href="login.html" target="_self" class="login">Login</a>
             </header>
-        </div>
-        <div class="content">     
-        
-           <div id="list">
-               
-                   <a href="#list-view">List View</a>
-                   <a href="#map-view">Map View</a>
-               
-            </div>
-            <div id="list-view">
-                <div class="hotels">
-                    <a href="detail.html"><img  src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" class="images"/> 
-                    <h3>Raddison Blu Hotel</h3>
-                    <p>5 Star <br><br>New Delhi</p></a>
+            <div>
+                <div id="list">
+                   <a href="#list-view" class="li" >List View</a>
+                   <a href="#map-view" class="li" >Map View</a>
                 </div>
-                <div class="hotels">
-                <img  src="https://media-cdn.tripadvisor.com/media/photo-w/15/06/31/5f/facade.jpg" class="images"/>
-                <h3>The Lalith New Delhi</h3>
-                <p>4.5 Star <br><br> New Delhi</p>
-                </div>
-                <div class="hotels">
-                <img  src="https://media-cdn.tripadvisor.com/media/photo-w/1b/4e/9b/11/exterior.jpg" class="images"/>
-                <h3>Taj Palace</h3>
-                <p>4 Star<br><br>New Delhi</p>
-                </div>
-            </div>
-            <div id="map-view">
-                <img src="https://cdn.pixabay.com/photo/2018/01/31/05/43/web-3120321_960_720.png" />
-                <p>MAP VIEW</p>
-            </div>
-        </div>    
+                    <div id="list-view">
+                        <div id="card1">
+                            <a href="detail.html">
+                            <div class="container">
+                                <div>
+                                <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" style="height: 200px; width: 250px;">
+                                </div>
+                                <div class="right">
+                                    <h3>Radisson Blu Hotel</h3>
+                                    5 Star
+                                    <br><br>
+                                    Indore
+                                </div>
+                            </div>
+                            </a>
+                        </div> 
+                        <div id="card2">
+                            <div class="container">
+                                <div>
+                                    <img src="https://media-cdn.tripadvisor.com/media/photo-w/15/06/31/5f/facade.jpg" style="height: 200px; width: 250px;">
+                                    </div>
+                                    <div class="right">
+                                        <h3>Hotel Marriot</h3>
+                                        4.5 Star
+                                        <br><br>
+                                         Indore
+                                    </div>
+                            </div>
+                        </div>
+                        <div id="card3" >
+                            <div class="container">
+                                <div>
+                                    <img src="https://media-cdn.tripadvisor.com/media/photo-w/1b/4e/9b/11/exterior.jpg" style="height: 200px; width: 250px;">
+                                    </div>
+                                    <div class="right">
+                                        <h3>Hotel Grand Bhagwati Palace</h3>
+                                        4.0 Star
+                                        <br><br>
+                                        Indore
+                                    </div>
 
-       <div class="footer">
-           <footer>
-                <div class="contact"><a href="contact.html">Contact Us</a></div>   
-                <div class="copyright" id="foot">
-                    &#169 2020 ROOM SEARCH PVT.LTD
-                </div> 
-               <div>
-                    <a href="https://www.facebook.com" target="_blank"> <img  src="assests\images\facebook.png" class="social"/></a>
-                    <a href="https://www.instagram.com" target="_blank"><img  src="assests\images\instagram.png" class="social"/></a>
-                    <a href="https://www.twitter.com" target="_blank"><img  src="assests\images\twitter.png" class="social"/></a>
 
+                            </div>  
+                        </div>
+                    </div>
+                    <div id="map-view">
+                        <img src="https://cdn.pixabay.com/photo/2018/01/31/05/43/web-3120321_960_720.png">
+                        <br>
+                        MAP VIEW
+                    </div>
+            </div>
+            <footer>
+                <a href="contact.html" target="_self" class="contact">Contact Us</a>
+                <div class="socialmedia">
+                <a href="https://www.facebook.com" target="_blank"><img src="assests/images/facebook.png" style="height: 20px; width: 22px;"></a>
+                <a href="https://www.instagram.com" target="_blank"><img src="assests/images/instagram.png" style="height: 20px; width: 22px;"></a>
+                <a href="https://twitter.com" target="_blank"><img src="assests/images/twitter.png" style="height: 20px; width: 22px;"></a>
                 </div>
-                
-            </footer>      
+                <p class="copyright">&copy; 2020 ROOM SEARCH PVT LTD.</p>
+            </footer>
         </div>
-    
-</body>    
-</html>
+    </body>
+    </html>        
