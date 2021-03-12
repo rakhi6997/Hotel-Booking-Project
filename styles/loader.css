@@ -1,4 +1,4 @@
-div{
+#div1{
     width: 70px;
     height: 70px;
     border-radius: 50%;
@@ -10,4 +10,13 @@ div{
     bottom: 0;
     left: 0;
     right: 0;
+    animation: animate 1s linear infinite;
 }
+
+@keyframes animate{
+    100%{
+    transform: rotate(360deg);
+    }
+
+}
+
