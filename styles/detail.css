@@ -52,8 +52,9 @@
 #div3{
     margin: 1% 4% 2%;
 }
-
-
+.checked{
+    color: orange;
+}
 .text{
     font-family: cursive;
 }
