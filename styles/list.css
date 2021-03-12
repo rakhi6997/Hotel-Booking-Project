@@ -41,9 +41,7 @@ display: none;
 .right {
   padding: 0.5em 1em 1em 1em;
 }
-.checked {
-  color: orange;
-}
+
 #list-content{
       color:black;
       text-decoration: none;
