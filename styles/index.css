@@ -7,7 +7,7 @@
     text-align: center;
   }
   
-  #div2 {
+  #div2,#moreimages {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -110,6 +110,12 @@
         flex-wrap: wrap;
         margin: auto;
         margin-left: 2em;
+    }
+    #moreimages{   
+      flex-wrap: wrap;
+      margin: auto;
+      margin-left: 2em;
+
     }
     .imgcontainer{
         height: 250px;
