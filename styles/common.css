@@ -1,4 +1,4 @@
-* {
+* /*{
     font-family: "Ubuntu", sans-serif;
   }
   /* .content {
@@ -9,7 +9,6 @@
   #mainContainer {
     height: 100%;
     width: 100%;
-    background-color: #e0e0e0;
   }
   
   body,
@@ -45,7 +44,7 @@
     font-family: "Ubuntu", sans-serif;
   }
   
-  a {
+  A {
     text-decoration: none;
     color: black;
   }
@@ -60,10 +59,18 @@
     right: 0%;
     margin-top: 10px;
     margin-right: 2%;
+    margin-bottom: 7%;
     text-decoration: none;
     position: absolute;
     color: black;
     padding: -0.625rem 0.75rem;
+  }
+  #contactus {
+    bottom: 20%;
+    margin-left: 2%;
+    text-decoration: none;
+    position: absolute;
+    color: black;
   }
   
   #contact {
@@ -91,12 +98,5 @@
   #login-form {
     display: flex;
     flex-direction: column;
-  }
-  #contactus {
-    bottom: 20%;
-    margin-left: 2%;
-    text-decoration: none;
-    position: absolute;
-    color: black;
   }
   
